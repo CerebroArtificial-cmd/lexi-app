@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lexi</title>
+</head>
+<body>
+    <h1>Olá, sou Lexi!</h1>
+    <p>Estou aqui para ajudar com qualquer coisa.</p>
+    <form>
+        <input type="text" id="input" placeholder="Digite uma mensagem">
+        <button type="submit">Enviar</button>
+    </form>
+    <script>
+        // Código para processar a mensagem e responder
+        const input = document.getElementById('input');
+        const button = document.querySelector('button');
+        button.addEventListener('click', () => {
+            const mensagem = input.value;
+            // Processar a mensagem e responder
+            // ...
+            const resposta = 'Resposta do Lexi!';
+            document.getElementById('output').innerHTML = resposta;
+        });
+    </script>
+</body>
+</html>
